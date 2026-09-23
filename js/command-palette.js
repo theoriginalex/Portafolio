@@ -20,15 +20,15 @@
     { label: "Design System", type: "Página", href: "design-system.html", keywords: "componentes colores tipografía" },
     { label: "Cambiar tema claro/oscuro", type: "Acción", run: () => window.portfolioTheme && window.portfolioTheme.toggle(), keywords: "dark light modo" },
     { label: "Copiar correo", type: "Acción", run: () => window.portfolioCopyEmail && window.portfolioCopyEmail(), keywords: "email mail" },
-    { label: "Abrir GitHub", type: "Enlace", href: "https://github.com/tu-usuario", external: true, keywords: "código repositorios" },
-    { label: "Abrir LinkedIn", type: "Enlace", href: "https://www.linkedin.com/in/tu-usuario", external: true, keywords: "perfil profesional" },
+    { label: "Abrir GitHub", type: "Enlace", href: "https://github.com/theoriginalex", external: true, keywords: "código repositorios" },
+    { label: "Abrir LinkedIn", type: "Enlace", href: "https://www.linkedin.com/in/%C3%ADndigo-ac-18b755331", external: true, keywords: "perfil profesional" },
   ];
 
   let results = commands;
   let activeIndex = 0;
 
   function normalize(text) {
-    return text.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+    return text.toLowerCase().normalize("NFD").replace(/p{Diacritic}/gu, "");
   }
 
   function render() {

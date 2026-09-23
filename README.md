@@ -3,8 +3,8 @@
 Portafolio personal e interactivo hecho con **HTML5 semántico, CSS propio y JavaScript**, sin frameworks ni librerías.
 Está pensado para que un reclutador encuentre lo importante en segundos. Arriba hay una **ficha rápida** con el rol que busco, mi stack, formación, ubicación e idiomas, y cada skill enlaza al proyecto que la demuestra.
 
-🔗 **Sitio publicado:** https://tu-usuario.github.io/portafolio/
-📁 **Repositorio:** https://github.com/tu-usuario/portafolio
+🔗 **Sitio publicado:** https://theoriginalex.github.io/portafolio/
+📁 **Repositorio:** https://github.com/theoriginalex/portafolio
 
 ![Captura del portafolio](assets/img/project-portafolio.svg)
 
@@ -81,7 +81,7 @@ Luego entra a `http://localhost:5500`.
 1. Sube el repositorio a GitHub (público).
 2. Ve a **Settings → Pages → Build and deployment**.
 3. En *Source* elige **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
-4. Espera 1–2 minutos y abre `https://tu-usuario.github.io/portafolio/`.
+4. Espera 1–2 minutos y abre `https://theoriginalex.github.io/portafolio/`.
 
 ## Accesibilidad
 
