@@ -28,7 +28,7 @@
   let activeIndex = 0;
 
   function normalize(text) {
-    return text.toLowerCase().normalize("NFD").replace(/p{Diacritic}/gu, "");
+    return text.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
   }
 
   function render() {
