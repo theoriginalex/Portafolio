@@ -6,7 +6,7 @@ Está pensado para que un reclutador encuentre lo importante en segundos. Arriba
 🔗 **Sitio publicado:** https://theoriginalex.github.io/Portafolio/
 📁 **Repositorio:** https://github.com/theoriginalex/Portafolio
 
-![Captura del portafolio](assets/img/project-portafolio.svg)
+![Captura del portafolio](assets/img/proyecto-portafolio.jpg)
 
 ## Secciones
 

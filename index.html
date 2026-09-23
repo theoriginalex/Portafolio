@@ -238,7 +238,7 @@
                 <span class="skill__icon" style="--skill-hue: 50" aria-hidden="true">JS</span>
                 <div class="skill__body">
                   <p class="skill__name">JavaScript</p>
-                  <p class="skill__proof">Evidencia: <a href="#proyecto-portafolio">interactividad de este sitio</a></p>
+                  <p class="skill__proof">Evidencia: <a href="#proyecto-finanzas">gráficos de Finanzas Claras</a></p>
                 </div>
                 <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
               </li>
@@ -246,7 +246,7 @@
                 <span class="skill__icon" style="--skill-hue: 265" aria-hidden="true">Bs</span>
                 <div class="skill__body">
                   <p class="skill__name">Bootstrap</p>
-                  <p class="skill__proof">Proyectos de la carrera en la UNEMI</p>
+                  <p class="skill__proof">Evidencia: <a href="#proyecto-reservas">Reservas Lab</a></p>
                 </div>
                 <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
               </li>
@@ -260,7 +260,7 @@
                 <span class="skill__icon" style="--skill-hue: 150" aria-hidden="true">Dj</span>
                 <div class="skill__body">
                   <p class="skill__name">Django</p>
-                  <p class="skill__proof">Proyectos de la carrera en la UNEMI</p>
+                  <p class="skill__proof">Evidencia: <a href="#proyecto-stock">Stock Tienda</a></p>
                 </div>
                 <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
               </li>
@@ -268,7 +268,7 @@
                 <span class="skill__icon" style="--skill-hue: 210" aria-hidden="true">Py</span>
                 <div class="skill__body">
                   <p class="skill__name">Python</p>
-                  <p class="skill__proof">Proyectos de la carrera en la UNEMI</p>
+                  <p class="skill__proof">Evidencia: <a href="#proyecto-finanzas">Finanzas Claras</a></p>
                 </div>
                 <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
               </li>
@@ -276,7 +276,7 @@
                 <span class="skill__icon" style="--skill-hue: 205" aria-hidden="true">Pg</span>
                 <div class="skill__body">
                   <p class="skill__name">PostgreSQL</p>
-                  <p class="skill__proof">Proyectos de la carrera en la UNEMI</p>
+                  <p class="skill__proof">Evidencia: <a href="#proyecto-reservas">Reservas Lab</a></p>
                 </div>
                 <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
               </li>
@@ -336,81 +336,54 @@
         <p class="filter-status" aria-live="polite" data-filter-status>Mostrando 4 de 4 proyectos</p>
 
         <div class="projects-grid" data-projects>
-          <article class="project-card" id="proyecto-reservas" data-tags="django postgresql bootstrap javascript">
+          <article class="project-card" id="proyecto-stock" data-tags="django postgresql bootstrap">
             <figure class="project-card__media">
-              <img src="assets/img/project-reservas.svg" alt="Captura del calendario semanal de Reservas Lab con bloques de horario ocupados" width="1200" height="750" loading="lazy">
-              <figcaption class="project-card__caption">Proyecto académico · 2025</figcaption>
+              <img src="assets/img/proyecto-stock.jpg" alt="Panel de Stock Tienda con indicadores de inventario, alertas de stock bajo y últimos movimientos" width="1200" height="750" loading="lazy">
+              <figcaption class="project-card__caption">Proyecto personal · 2026</figcaption>
             </figure>
             <div class="project-card__body">
-              <h3 class="project-card__title">Reservas Lab</h3>
-              <p class="project-card__desc">Sistema web para reservar laboratorios de computación por bloques horarios.</p>
-              <p class="project-card__problem"><strong>Problema:</strong> las reservas se hacían por correo y había cruces de horario cada semana.</p>
+              <h3 class="project-card__title">Stock Tienda</h3>
+              <p class="project-card__desc">Inventario web para tiendas de barrio: productos, entradas, salidas y alertas de stock bajo.</p>
+              <p class="project-card__problem"><strong>Problema:</strong> las tiendas pequeñas de Naranjal llevan el inventario en cuadernos y se enteran tarde de que un producto se acabó.</p>
               <ul class="tag-list" aria-label="Tecnologías">
                 <li class="tag">Django</li>
                 <li class="tag">PostgreSQL</li>
                 <li class="tag">Bootstrap</li>
-                <li class="tag">JavaScript</li>
+                <li class="tag">Python</li>
               </ul>
             </div>
             <footer class="project-card__footer">
               <button class="button button--small button--primary" type="button" data-project-open>Ver detalles</button>
-              <a class="text-link" href="https://github.com/theoriginalex/reservas-lab" target="_blank" rel="noopener noreferrer">Código ↗</a>
+              <a class="text-link" href="https://github.com/theoriginalex/stock-tienda" target="_blank" rel="noopener noreferrer">Código ↗</a>
             </footer>
             <template data-project-details>
               <h3>La solución</h3>
-              <p>Aplicación Django con validación de choques de horario en el modelo, base de datos PostgreSQL y un calendario semanal con Bootstrap y JavaScript. Los administradores aprueban o rechazan solicitudes desde un panel.</p>
-              <h3>Mi rol</h3>
-              <p>Equipo de 3. Me encargué de los modelos, las vistas de reserva y la interfaz.</p>
-              <h3>Resultado / aprendizaje</h3>
-              <p>Cero reservas duplicadas en las pruebas con el curso. Aprendí a modelar relaciones en PostgreSQL con el ORM de Django y a validar datos en el servidor.</p>
-            </template>
-          </article>
-
-          <article class="project-card" id="proyecto-clima" data-tags="javascript">
-            <figure class="project-card__media">
-              <img src="assets/img/project-clima.svg" alt="Pantalla de Clima Ahora mostrando la temperatura actual y el pronóstico de cinco días" width="1200" height="750" loading="lazy">
-              <figcaption class="project-card__caption">Proyecto personal · 2025</figcaption>
-            </figure>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Clima Ahora</h3>
-              <p class="project-card__desc">App del clima ligera que consume una API pública y guarda tus ciudades favoritas.</p>
-              <p class="project-card__problem"><strong>Problema:</strong> las apps del clima populares son pesadas y llenas de anuncios en móviles de gama baja.</p>
-              <ul class="tag-list" aria-label="Tecnologías">
-                <li class="tag">JavaScript</li>
-                <li class="tag">Fetch API</li>
-                <li class="tag">localStorage</li>
-                <li class="tag">CSS Grid</li>
+              <p>Aplicación Django donde el stock solo cambia mediante movimientos de entrada o salida. Cada movimiento se guarda dentro de una transacción y una salida mayor al stock disponible se rechaza con un mensaje claro.</p>
+              <h3>Funcionalidades</h3>
+              <ul>
+                <li>Panel con productos activos, stock bajo, valor del inventario y movimientos del día.</li>
+                <li>Búsqueda por nombre o código, filtro por categoría y por stock bajo, con paginación.</li>
+                <li>Historial de movimientos por producto y estados OK / Bajo / Agotado.</li>
+                <li>14 pruebas automatizadas con el framework de tests de Django.</li>
               </ul>
-            </div>
-            <footer class="project-card__footer">
-              <button class="button button--small button--primary" type="button" data-project-open>Ver detalles</button>
-              <a class="text-link" href="https://github.com/theoriginalex/clima-ahora" target="_blank" rel="noopener noreferrer">Código ↗</a>
-              <a class="text-link" href="https://theoriginalex.github.io/clima-ahora/" target="_blank" rel="noopener noreferrer">Demo ↗</a>
-            </footer>
-            <template data-project-details>
-              <h3>La solución</h3>
-              <p>Una página de menos de 50 KB que pide la ubicación, consulta la API de OpenWeather y cachea la última respuesta para mostrarla sin conexión.</p>
-              <h3>Mi rol</h3>
-              <p>Proyecto individual: diseño, desarrollo y despliegue en GitHub Pages.</p>
-              <h3>Resultado / aprendizaje</h3>
-              <p>Aprendí a manejar promesas, estados de carga y error, y a no exponer claves de API en el cliente.</p>
+              <h3>Qué aprendí</h3>
+              <p>Usar transacciones y expresiones F() para evitar errores de concurrencia en el stock, y restricciones a nivel de base de datos.</p>
             </template>
           </article>
-
-          <article class="project-card" id="proyecto-finanzas" data-tags="django postgresql javascript">
+          <article class="project-card" id="proyecto-finanzas" data-tags="django postgresql bootstrap javascript">
             <figure class="project-card__media">
-              <img src="assets/img/project-finanzas.svg" alt="Dashboard de Finanzas Claras con gráfico de barras de gastos mensuales por categoría" width="1200" height="750" loading="lazy">
-              <figcaption class="project-card__caption">Proyecto académico · 2024</figcaption>
+              <img src="assets/img/proyecto-finanzas.jpg" alt="Dashboard de Finanzas Claras con total del mes, gráfico de dona por categoría y gráfico de barras de gasto diario" width="1200" height="750" loading="lazy">
+              <figcaption class="project-card__caption">Proyecto personal · 2026</figcaption>
             </figure>
             <div class="project-card__body">
               <h3 class="project-card__title">Finanzas Claras</h3>
-              <p class="project-card__desc">Dashboard para registrar gastos y ver en qué se va el dinero cada mes.</p>
-              <p class="project-card__problem"><strong>Problema:</strong> estudiantes que no saben cuánto gastan en transporte, comida y ocio.</p>
+              <p class="project-card__desc">Control de gastos personales con resumen mensual y gráficos por categoría y por día.</p>
+              <p class="project-card__problem"><strong>Problema:</strong> muchos estudiantes no saben cuánto gastan al mes en transporte, comida u ocio.</p>
               <ul class="tag-list" aria-label="Tecnologías">
                 <li class="tag">Django</li>
                 <li class="tag">PostgreSQL</li>
-                <li class="tag">JavaScript</li>
                 <li class="tag">Chart.js</li>
+                <li class="tag">Bootstrap</li>
               </ul>
             </div>
             <footer class="project-card__footer">
@@ -419,17 +392,54 @@
             </footer>
             <template data-project-details>
               <h3>La solución</h3>
-              <p>Aplicación Django con inicio de sesión, CRUD de gastos por categoría y gráficos mensuales con Chart.js.</p>
-              <h3>Mi rol</h3>
-              <p>Equipo de 2. Diseñé el modelo de datos y las vistas del dashboard.</p>
-              <h3>Resultado / aprendizaje</h3>
-              <p>Primera vez separando rutas, plantillas y acceso a datos. Entendí por qué conviene validar tanto en cliente como en servidor.</p>
+              <p>Aplicación Django con registro de usuarios; cada persona ve solo sus propios gastos. El dashboard calcula los totales con agregaciones del ORM y los muestra con Chart.js.</p>
+              <h3>Funcionalidades</h3>
+              <ul>
+                <li>Registro e inicio de sesión; al crear la cuenta se generan categorías por defecto.</li>
+                <li>Dashboard mensual: total, promedio diario, categoría con más gasto y comparación con el mes anterior.</li>
+                <li>CRUD de gastos y categorías con filtros por mes y categoría.</li>
+                <li>19 pruebas automatizadas, incluida la protección de datos entre usuarios.</li>
+              </ul>
+              <h3>Qué aprendí</h3>
+              <p>Agregaciones con Sum, Avg y TruncDay, cómo pasar datos de Django a JavaScript de forma segura con json_script, y filtrar siempre por el usuario autenticado.</p>
             </template>
           </article>
-
+          <article class="project-card" id="proyecto-reservas" data-tags="django postgresql bootstrap">
+            <figure class="project-card__media">
+              <img src="assets/img/proyecto-reservas.jpg" alt="Calendario semanal de Reservas Lab con bloques de reservas aprobadas y pendientes en el Laboratorio de Redes" width="1200" height="750" loading="lazy">
+              <figcaption class="project-card__caption">Proyecto personal · 2026</figcaption>
+            </figure>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Reservas Lab</h3>
+              <p class="project-card__desc">Reserva de laboratorios de computación por bloques horarios con calendario semanal.</p>
+              <p class="project-card__problem"><strong>Problema:</strong> las reservas de laboratorios se hacían por correo y había cruces de horario cada semana.</p>
+              <ul class="tag-list" aria-label="Tecnologías">
+                <li class="tag">Django</li>
+                <li class="tag">PostgreSQL</li>
+                <li class="tag">Bootstrap</li>
+              </ul>
+            </div>
+            <footer class="project-card__footer">
+              <button class="button button--small button--primary" type="button" data-project-open>Ver detalles</button>
+              <a class="text-link" href="https://github.com/theoriginalex/reservas-lab" target="_blank" rel="noopener noreferrer">Código ↗</a>
+            </footer>
+            <template data-project-details>
+              <h3>La solución</h3>
+              <p>Aplicación Django que valida en el modelo que una reserva no se cruce con otra del mismo laboratorio, y muestra la disponibilidad en un calendario semanal de lunes a sábado.</p>
+              <h3>Funcionalidades</h3>
+              <ul>
+                <li>Calendario semanal por laboratorio con navegación entre semanas.</li>
+                <li>Validación de cruces de horario, horario permitido y fechas pasadas.</li>
+                <li>Sección "Mis reservas" para cancelar, y aprobación de reservas desde el admin de Django.</li>
+                <li>18 pruebas automatizadas de validaciones y vistas.</li>
+              </ul>
+              <h3>Qué aprendí</h3>
+              <p>Validaciones de negocio en el método clean() del modelo, consultas de solapamiento de horarios y personalizar el admin de Django con acciones.</p>
+            </template>
+          </article>
           <article class="project-card" id="proyecto-portafolio" data-tags="html-css javascript">
             <figure class="project-card__media">
-              <img src="assets/img/project-portafolio.svg" alt="Vista del portafolio con la ficha rápida para reclutadores y la paleta de colores" width="1200" height="750" loading="lazy">
+              <img src="assets/img/proyecto-portafolio.jpg" alt="Vista del portafolio con la presentación de Alex Chica y la ficha rápida para reclutadores" width="1200" height="750" loading="lazy">
               <figcaption class="project-card__caption">Proyecto académico · 2026</figcaption>
             </figure>
             <div class="project-card__body">
@@ -450,11 +460,16 @@
             </footer>
             <template data-project-details>
               <h3>La solución</h3>
-              <p>Una sola página con una "ficha rápida" arriba, skills vinculadas a evidencia y un design system basado en variables CSS que documenta cada componente.</p>
-              <h3>Mi rol</h3>
-              <p>Proyecto individual: boceto, diseño, desarrollo, pruebas y publicación.</p>
-              <h3>Resultado / aprendizaje</h3>
-              <p>Aprendí a pensar en tokens de diseño, a probar accesibilidad con teclado y a trabajar con commits pequeños.</p>
+              <p>Una sola página con una ficha rápida arriba, skills vinculadas a proyectos reales y un design system basado en variables CSS que documenta cada componente.</p>
+              <h3>Funcionalidades</h3>
+              <ul>
+                <li>Tema claro y oscuro guardado en localStorage.</li>
+                <li>Filtro de proyectos, modal de detalles y paleta de comandos (Ctrl + K).</li>
+                <li>Formulario de contacto con validación.</li>
+                <li>Diseño responsive para móvil, tablet y escritorio.</li>
+              </ul>
+              <h3>Qué aprendí</h3>
+              <p>Pensar en tokens de diseño, probar la accesibilidad con teclado y trabajar con commits pequeños.</p>
             </template>
           </article>
         </div>
@@ -564,7 +579,7 @@
           <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
       </header>
-      <img class="modal__image" src="assets/img/project-portafolio.svg" alt="" width="1200" height="750" data-modal-image>
+      <img class="modal__image" src="assets/img/proyecto-portafolio.jpg" alt="" width="1200" height="750" data-modal-image>
       <div class="modal__content" data-modal-content></div>
       <footer class="modal__footer" data-modal-links></footer>
     </article>

@@ -979,6 +979,12 @@
   color: var(--color-primary);
 }
 
+.modal__content ul:not([class]) {
+  display: grid;
+  gap: var(--space-1);
+  padding-left: var(--space-6);
+}
+
 .modal__footer {
   display: flex;
   flex-wrap: wrap;
