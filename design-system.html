@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System — Nombre Apellido</title>
+  <meta name="description" content="Design system del portafolio de Nombre Apellido: colores, tipografía, espaciado y componentes reutilizables.">
+  <meta name="theme-color" content="#f3f0e8">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/design-system.css">
+
+  <script src="js/theme-init.js"></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/command-palette.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/design-system.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nombre Apellido, volver al portafolio">
+        <span class="brand__mark" aria-hidden="true">NA</span>
+        <span class="brand__name">Nombre Apellido</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list" id="nav-list" data-nav-list>
+          <li><a class="nav__link" href="index.html#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="index.html#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="index.html#skills">Skills</a></li>
+          <li><a class="nav__link" href="index.html#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="design-system.html" aria-current="page">Design System</a></li>
+          <li><a class="nav__link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-button palette-trigger" type="button" data-palette-open aria-label="Abrir buscador de comandos (Ctrl + K)">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <kbd class="palette-trigger__kbd">Ctrl K</kbd>
+        </button>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Cambiar a tema oscuro">
+          <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-button nav-toggle" type="button" data-nav-toggle aria-controls="nav-list" aria-expanded="false" aria-label="Abrir menú">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="ds-hero" aria-labelledby="ds-title">
+      <div class="container">
+        <p class="hero__meta-text">Documentación · v1.0</p>
+        <h1 class="ds-hero__title" id="ds-title">Design System</h1>
+        <p class="ds-hero__lead">
+          Las decisiones visuales del portafolio viven en <code>css/tokens.css</code> como variables CSS.
+          Todo lo que ves aquí es el componente real, con las mismas clases que usa la página principal.
+          Cambia el tema para ver cómo cada token se adapta.
+        </p>
+        <nav class="ds-toc" aria-label="Contenido del design system">
+          <ol class="ds-toc__list">
+            <li><a class="chip" href="#colores">01 Colores</a></li>
+            <li><a class="chip" href="#tipografia">02 Tipografía</a></li>
+            <li><a class="chip" href="#espaciado">03 Espaciado</a></li>
+            <li><a class="chip" href="#bordes">04 Bordes y sombras</a></li>
+            <li><a class="chip" href="#componentes">05 Componentes</a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 01 · COLORES -->
+    <section class="section" id="colores" aria-labelledby="colors-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-head__index" aria-hidden="true">01</p>
+          <h2 class="section-head__title" id="colors-title">Colores</h2>
+          <p class="section-head__note">Papel, tinta y un solo color de señal. El valor se lee en vivo del CSS.</p>
+        </header>
+
+        <div class="swatch-grid">
+          <figure class="swatch" style="--swatch: var(--color-primary)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Primary</strong><code>--color-primary</code><span class="swatch__value" data-token="--color-primary">#c2410c</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-primary-hover)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Primary hover</strong><code>--color-primary-hover</code><span class="swatch__value" data-token="--color-primary-hover">#9a3412</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-primary-soft)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Primary soft</strong><code>--color-primary-soft</code><span class="swatch__value" data-token="--color-primary-soft">#fbe3d4</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-secondary)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Secondary</strong><code>--color-secondary</code><span class="swatch__value" data-token="--color-secondary">#1f3a5f</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-background)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Background</strong><code>--color-background</code><span class="swatch__value" data-token="--color-background">#f3f0e8</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-surface)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Surface</strong><code>--color-surface</code><span class="swatch__value" data-token="--color-surface">#fbfaf6</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-surface-alt)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Surface alt</strong><code>--color-surface-alt</code><span class="swatch__value" data-token="--color-surface-alt">#e9e5da</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-text)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Text</strong><code>--color-text</code><span class="swatch__value" data-token="--color-text">#16150f</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-text-muted)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Text muted</strong><code>--color-text-muted</code><span class="swatch__value" data-token="--color-text-muted">#5f5b50</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-border)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Border</strong><code>--color-border</code><span class="swatch__value" data-token="--color-border">#d6d0c1</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-success)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Success</strong><code>--color-success</code><span class="swatch__value" data-token="--color-success">#2f7d4f</span></figcaption>
+          </figure>
+          <figure class="swatch" style="--swatch: var(--color-danger)">
+            <div class="swatch__chip"></div>
+            <figcaption class="swatch__info"><strong>Danger</strong><code>--color-danger</code><span class="swatch__value" data-token="--color-danger">#b42318</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · TIPOGRAFÍA -->
+    <section class="section section--alt" id="tipografia" aria-labelledby="type-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-head__index" aria-hidden="true">02</p>
+          <h2 class="section-head__title" id="type-title">Tipografía</h2>
+          <p class="section-head__note">Serif editorial para títulos, sans para lectura, mono para datos.</p>
+        </header>
+
+        <ul class="font-list" aria-label="Familias tipográficas">
+          <li class="font-list__item"><span class="font-list__sample font-list__sample--display">Aa</span><strong>Instrument Serif</strong><code>--font-display</code></li>
+          <li class="font-list__item"><span class="font-list__sample font-list__sample--body">Aa</span><strong>Manrope</strong><code>--font-body</code></li>
+          <li class="font-list__item"><span class="font-list__sample font-list__sample--mono">Aa</span><strong>JetBrains Mono</strong><code>--font-mono</code></li>
+        </ul>
+
+        <dl class="type-scale">
+          <div class="type-scale__row">
+            <dt><code>h1</code> · --text-3xl</dt>
+            <dd><p class="ds-h1">Interfaces claras</p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt><code>h2</code> · --text-2xl</dt>
+            <dd><p class="ds-h2">Proyectos destacados</p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt><code>h3</code> · --text-md</dt>
+            <dd><p class="ds-h3">Título de tarjeta o grupo</p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt><code>p</code> · --text-base</dt>
+            <dd><p>Párrafo de lectura. Interlineado de 1.65 y ancho máximo de 65 caracteres para que el texto sea cómodo de leer en cualquier pantalla.</p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt>Secundario · --color-text-muted</dt>
+            <dd><p class="ds-muted">Texto secundario para notas, fechas y descripciones de apoyo.</p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt>Enlace · <code>.text-link</code></dt>
+            <dd><p><a class="text-link" href="index.html#proyectos">Ver proyectos del portafolio</a></p></dd>
+          </div>
+          <div class="type-scale__row">
+            <dt>Etiqueta · --font-mono</dt>
+            <dd><p class="hero__meta-text">Etiqueta en mayúsculas · 2026</p></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 03 · ESPACIADO -->
+    <section class="section" id="espaciado" aria-labelledby="space-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-head__index" aria-hidden="true">03</p>
+          <h2 class="section-head__title" id="space-title">Espaciado</h2>
+          <p class="section-head__note">Escala con base de 4 px. Los nombres indican múltiplos de 4.</p>
+        </header>
+
+        <ol class="space-scale">
+          <li class="space-scale__row"><code>--space-1</code><span class="space-scale__bar" style="--size: var(--space-1)"></span><span>0.25rem · 4px</span></li>
+          <li class="space-scale__row"><code>--space-2</code><span class="space-scale__bar" style="--size: var(--space-2)"></span><span>0.5rem · 8px</span></li>
+          <li class="space-scale__row"><code>--space-3</code><span class="space-scale__bar" style="--size: var(--space-3)"></span><span>0.75rem · 12px</span></li>
+          <li class="space-scale__row"><code>--space-4</code><span class="space-scale__bar" style="--size: var(--space-4)"></span><span>1rem · 16px</span></li>
+          <li class="space-scale__row"><code>--space-6</code><span class="space-scale__bar" style="--size: var(--space-6)"></span><span>1.5rem · 24px</span></li>
+          <li class="space-scale__row"><code>--space-8</code><span class="space-scale__bar" style="--size: var(--space-8)"></span><span>2rem · 32px</span></li>
+          <li class="space-scale__row"><code>--space-12</code><span class="space-scale__bar" style="--size: var(--space-12)"></span><span>3rem · 48px</span></li>
+          <li class="space-scale__row"><code>--space-16</code><span class="space-scale__bar" style="--size: var(--space-16)"></span><span>4rem · 64px</span></li>
+          <li class="space-scale__row"><code>--space-24</code><span class="space-scale__bar" style="--size: var(--space-24)"></span><span>6rem · 96px</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 · BORDES Y SOMBRAS -->
+    <section class="section section--alt" id="bordes" aria-labelledby="borders-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-head__index" aria-hidden="true">04</p>
+          <h2 class="section-head__title" id="borders-title">Bordes y sombras</h2>
+          <p class="section-head__note">La sombra desplazada (offset) es la firma visual del sitio.</p>
+        </header>
+
+        <ul class="token-boxes" aria-label="Radios y sombras">
+          <li class="token-box" style="--box-radius: var(--radius-sm)"><code>--radius-sm</code><span>0.375rem</span></li>
+          <li class="token-box" style="--box-radius: var(--radius-md)"><code>--radius-md</code><span>0.75rem</span></li>
+          <li class="token-box" style="--box-radius: var(--radius-lg)"><code>--radius-lg</code><span>1.25rem</span></li>
+          <li class="token-box" style="--box-radius: var(--radius-pill)"><code>--radius-pill</code><span>999px</span></li>
+          <li class="token-box" style="--box-shadow: var(--shadow-sm)"><code>--shadow-sm</code><span>Relieve mínimo</span></li>
+          <li class="token-box" style="--box-shadow: var(--shadow-card)"><code>--shadow-card</code><span>Tarjetas</span></li>
+          <li class="token-box" style="--box-shadow: var(--shadow-lg)"><code>--shadow-lg</code><span>Modales</span></li>
+          <li class="token-box token-box--strong" style="--box-shadow: var(--shadow-offset)"><code>--shadow-offset</code><span>Hover y ficha</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 · COMPONENTES -->
+    <section class="section" id="componentes" aria-labelledby="components-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-head__index" aria-hidden="true">05</p>
+          <h2 class="section-head__title" id="components-title">Componentes</h2>
+          <p class="section-head__note">Las mismas clases de <code>components.css</code> que usa el portafolio.</p>
+        </header>
+
+        <div class="ds-grid">
+          <article class="ds-demo" aria-labelledby="demo-buttons">
+            <h3 class="ds-demo__title" id="demo-buttons">Botones</h3>
+            <div class="ds-demo__preview">
+              <button class="button button--primary" type="button">Primario</button>
+              <button class="button button--secondary" type="button">Secundario</button>
+              <button class="button button--ghost" type="button">Ghost</button>
+              <button class="button button--small button--primary" type="button">Pequeño</button>
+            </div>
+            <p class="ds-demo__code"><code>.button</code> + <code>--primary</code> · <code>--secondary</code> · <code>--ghost</code> · <code>--small</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-icon-buttons">
+            <h3 class="ds-demo__title" id="demo-icon-buttons">Botón de ícono y enlaces</h3>
+            <div class="ds-demo__preview">
+              <button class="icon-button" type="button" aria-label="Ejemplo: buscar">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </button>
+              <button class="back-to-top ds-static" type="button" aria-label="Ejemplo: volver arriba">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <a class="text-link" href="index.html">Enlace de texto</a>
+              <a class="text-link" href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">Enlace externo ↗</a>
+            </div>
+            <p class="ds-demo__code"><code>.icon-button</code> · <code>.back-to-top</code> · <code>.text-link</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-badges">
+            <h3 class="ds-demo__title" id="demo-badges">Badges, estado y filtros</h3>
+            <div class="ds-demo__preview">
+              <ul class="tag-list" aria-label="Ejemplo de tags">
+                <li class="tag">JavaScript</li>
+                <li class="tag">Node.js</li>
+                <li class="tag">MySQL</li>
+              </ul>
+              <span class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span>Disponible para prácticas</span>
+              <div class="filter-bar" role="group" aria-label="Ejemplo de filtros" data-ds-chips>
+                <button class="chip" type="button" aria-pressed="true">Activo</button>
+                <button class="chip" type="button" aria-pressed="false">Inactivo</button>
+              </div>
+            </div>
+            <p class="ds-demo__code"><code>.tag</code> · <code>.status-pill</code> · <code>.chip[aria-pressed]</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-skill">
+            <h3 class="ds-demo__title" id="demo-skill">Skill con nivel</h3>
+            <div class="ds-demo__preview ds-demo__preview--block">
+              <ul class="skill-group__list">
+                <li class="skill">
+                  <span class="skill__icon" style="--skill-hue: 50" aria-hidden="true">JS</span>
+                  <div class="skill__body">
+                    <p class="skill__name">JavaScript (ES6+)</p>
+                    <p class="skill__proof">Evidencia: <a href="index.html#proyecto-clima">Clima Ahora</a></p>
+                  </div>
+                  <span class="level" data-level="3"><span class="visually-hidden">Nivel 3 de 4: intermedio</span></span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--skill-hue: 195" aria-hidden="true">Re</span>
+                  <div class="skill__body">
+                    <p class="skill__name">React</p>
+                    <p class="skill__proof">Aprendiendo</p>
+                  </div>
+                  <span class="level" data-level="1"><span class="visually-hidden">Nivel 1 de 4: explorando</span></span>
+                </li>
+              </ul>
+            </div>
+            <p class="ds-demo__code"><code>.skill</code> · <code>.skill__icon</code> (tono con <code>--skill-hue</code>) · <code>.level[data-level]</code></p>
+          </article>
+
+          <article class="ds-demo ds-demo--wide" aria-labelledby="demo-card">
+            <h3 class="ds-demo__title" id="demo-card">Card de proyecto</h3>
+            <div class="ds-demo__preview ds-demo__preview--block">
+              <div class="ds-card-wrap" data-projects>
+                <article class="project-card" data-tags="javascript">
+                  <figure class="project-card__media">
+                    <img src="assets/img/project-clima.svg" alt="Pantalla de Clima Ahora mostrando la temperatura actual y el pronóstico" width="1200" height="750" loading="lazy">
+                    <figcaption class="project-card__caption">Proyecto personal · 2025</figcaption>
+                  </figure>
+                  <div class="project-card__body">
+                    <h4 class="project-card__title">Clima Ahora</h4>
+                    <p class="project-card__desc">App del clima ligera que consume una API pública.</p>
+                    <p class="project-card__problem"><strong>Problema:</strong> apps pesadas en móviles de gama baja.</p>
+                    <ul class="tag-list" aria-label="Tecnologías">
+                      <li class="tag">JavaScript</li>
+                      <li class="tag">Fetch API</li>
+                    </ul>
+                  </div>
+                  <footer class="project-card__footer">
+                    <button class="button button--small button--primary" type="button" data-project-open>Ver detalles</button>
+                    <a class="text-link" href="index.html#proyecto-clima">En el portafolio</a>
+                  </footer>
+                  <template data-project-details>
+                    <h3>Modal de proyecto</h3>
+                    <p>Este es el mismo modal <code>.modal</code> que se abre en la página principal. Se construye con el elemento nativo <code>&lt;dialog&gt;</code>, se cierra con Esc, con el botón o haciendo clic fuera.</p>
+                  </template>
+                </article>
+              </div>
+            </div>
+            <p class="ds-demo__code"><code>.project-card</code> · <code>__media</code> · <code>__body</code> · <code>__problem</code> · <code>__footer</code> — abre <code>.modal</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-form">
+            <h3 class="ds-demo__title" id="demo-form">Inputs y textarea</h3>
+            <form class="ds-demo__preview ds-demo__preview--block ds-form" aria-label="Ejemplo de formulario" data-ds-form>
+              <div class="field">
+                <label class="field__label" for="ds-input">Input</label>
+                <input class="input" id="ds-input" type="text" placeholder="Texto de ejemplo">
+              </div>
+              <div class="field">
+                <label class="field__label" for="ds-input-error">Input con error</label>
+                <input class="input" id="ds-input-error" type="email" value="correo-invalido" aria-invalid="true" aria-describedby="ds-input-error-msg">
+                <p class="field__error" id="ds-input-error-msg">Revisa el formato del correo.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="ds-select">Select</label>
+                <select class="input select" id="ds-select">
+                  <option>Oferta de prácticas / empleo</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field__label" for="ds-textarea">Textarea</label>
+                <textarea class="input textarea" id="ds-textarea" rows="3" aria-describedby="ds-textarea-hint"></textarea>
+                <p class="field__hint" id="ds-textarea-hint">0 / 1000 caracteres</p>
+              </div>
+            </form>
+            <p class="ds-demo__code"><code>.field</code> · <code>.input</code> · <code>.select</code> · <code>.textarea</code> · <code>[aria-invalid]</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-spec">
+            <h3 class="ds-demo__title" id="demo-spec">Ficha rápida y canal</h3>
+            <div class="ds-demo__preview ds-demo__preview--block">
+              <dl class="spec-list">
+                <div class="spec-list__row">
+                  <dt>Busco</dt>
+                  <dd>Prácticas / Trainee Frontend</dd>
+                </div>
+                <div class="spec-list__row">
+                  <dt>Stack</dt>
+                  <dd>HTML · CSS · JavaScript</dd>
+                </div>
+              </dl>
+              <ul class="channel-list">
+                <li>
+                  <a class="channel" href="index.html#contacto">
+                    <span class="channel__label">Correo</span>
+                    <span class="channel__value">tu.correo@ejemplo.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="ds-demo__code"><code>.spec-list</code> · <code>.channel</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-nav">
+            <h3 class="ds-demo__title" id="demo-nav">Navbar</h3>
+            <div class="ds-demo__preview ds-demo__preview--block">
+              <p>El encabezado de esta página es el componente real: fijo al hacer scroll, con menú hamburguesa en móvil y el enlace activo subrayado.</p>
+              <ul class="ds-nav-sample" aria-label="Estados del enlace de navegación">
+                <li><span class="nav__link">Normal</span></li>
+                <li><span class="nav__link" aria-current="true">Activo</span></li>
+              </ul>
+            </div>
+            <p class="ds-demo__code"><code>.site-header</code> · <code>.nav__link[aria-current]</code> · <code>.nav-toggle</code></p>
+          </article>
+
+          <article class="ds-demo" aria-labelledby="demo-feedback">
+            <h3 class="ds-demo__title" id="demo-feedback">Feedback</h3>
+            <div class="ds-demo__preview">
+              <button class="button button--secondary" type="button" data-ds-toast>Mostrar toast</button>
+              <button class="button button--secondary" type="button" data-palette-open>Abrir paleta (Ctrl K)</button>
+            </div>
+            <p class="ds-demo__code"><code>.toast</code> · <code>.palette</code> · <code>.modal</code></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year>2026</span> Nombre Apellido. Hecho a mano con HTML, CSS y JavaScript.</p>
+      <nav aria-label="Secundaria">
+        <ul class="site-footer__links">
+          <li><a class="text-link" href="index.html">Volver al portafolio</a></li>
+          <li><a class="text-link" href="https://github.com/tu-usuario/portafolio" target="_blank" rel="noopener noreferrer">Código fuente ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Volver al inicio" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <dialog class="modal" data-project-modal aria-labelledby="modal-title">
+    <article class="modal__panel">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-title">Proyecto</h2>
+        <button class="icon-button" type="button" data-modal-close aria-label="Cerrar detalles">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <img class="modal__image" src="assets/img/project-portafolio.svg" alt="" width="1200" height="750" data-modal-image>
+      <div class="modal__content" data-modal-content></div>
+      <footer class="modal__footer" data-modal-links></footer>
+    </article>
+  </dialog>
+
+  <dialog class="palette" data-palette aria-labelledby="palette-title">
+    <h2 class="visually-hidden" id="palette-title">Buscador de comandos</h2>
+    <label class="visually-hidden" for="palette-input">Escribe para buscar una sección o acción</label>
+    <input class="palette__input" id="palette-input" type="text" placeholder="Ir a… (proyectos, contacto, tema)" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" data-palette-input>
+    <ul class="palette__list" id="palette-list" role="listbox" data-palette-list></ul>
+    <p class="palette__hint"><kbd>↑</kbd><kbd>↓</kbd> navegar · <kbd>Enter</kbd> abrir · <kbd>Esc</kbd> cerrar</p>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
