@@ -3,7 +3,7 @@
  * envío mediante mailto y botón "copiar correo" con toast.
  */
 (function () {
-  const CONTACT_EMAIL = "tu.correo@ejemplo.com";
+  const CONTACT_EMAIL = "alexcchica02@gmail.com";
   const toast = document.querySelector("[data-toast]");
   let toastTimer;
 

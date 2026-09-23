@@ -10,8 +10,8 @@
     <rect width="190" height="30" rx="15" fill="#fbfaf6" stroke="#d6d0c1" stroke-width="2"/>
     <circle cx="22" cy="15" r="6" fill="#2f7d4f"/>
     <rect x="38" y="10" width="130" height="10" rx="4" fill="#5f5b50"/>
-    <text x="0" y="150" font-family="Georgia, serif" font-size="110" fill="#16150f">Nombre</text>
-    <text x="0" y="255" font-family="Georgia, serif" font-size="110" fill="#16150f">Apellido</text>
+    <text x="0" y="150" font-family="Georgia, serif" font-size="110" fill="#16150f">Alex</text>
+    <text x="0" y="255" font-family="Georgia, serif" font-size="110" fill="#16150f">Chica Cox</text>
     <text x="0" y="320" font-family="Georgia, serif" font-style="italic" font-size="40" fill="#c2410c">claras, rápidas y accesibles.</text>
     <rect y="370" width="440" height="14" rx="5" fill="#5f5b50"/>
     <rect y="398" width="360" height="14" rx="5" fill="#5f5b50"/>

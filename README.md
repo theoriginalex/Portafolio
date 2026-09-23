@@ -1,4 +1,4 @@
-# Portafolio web — Nombre Apellido
+# Portafolio web — Alex Ricardo Chica Cox
 
 Portafolio personal e interactivo hecho con **HTML5 semántico, CSS propio y JavaScript**, sin frameworks ni librerías.
 Está pensado para que un reclutador encuentre lo importante en segundos. Arriba hay una **ficha rápida** con el rol que busco, mi stack, formación, ubicación e idiomas, y cada skill enlaza al proyecto que la demuestra.
