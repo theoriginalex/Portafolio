@@ -110,7 +110,7 @@
     box-shadow: none;
   }
 
-  .nav-toggle {
+  .icon-button.nav-toggle {
     display: none;
   }
 }
