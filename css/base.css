@@ -109,8 +109,8 @@ kbd {
 }
 
 ::selection {
-  background: var(--color-secondary);
-  color: var(--color-on-secondary);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 /* ---------- Accesibilidad ---------- */

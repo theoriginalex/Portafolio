@@ -22,7 +22,7 @@
     <rect x="164" y="450" width="60" height="150" rx="14" fill="#e9ebf0"/>
     <rect x="232" y="450" width="60" height="150" rx="14" fill="#e9ebf0"/>
     <rect x="300" y="450" width="52" height="150" rx="14" fill="#e9ebf0"/>
-    <circle cx="58" cy="500" r="14" fill="#2b4dff"/><circle cx="126" cy="500" r="14" fill="#ffffff"/><circle cx="194" cy="500" r="14" fill="#2b4dff"/><circle cx="262" cy="500" r="14" fill="#c6f432"/><circle cx="326" cy="500" r="14" fill="#2b4dff"/>
+    <circle cx="58" cy="500" r="14" fill="#2b4dff"/><circle cx="126" cy="500" r="14" fill="#ffffff"/><circle cx="194" cy="500" r="14" fill="#2b4dff"/><circle cx="262" cy="500" r="14" fill="#8fa0ff"/><circle cx="326" cy="500" r="14" fill="#2b4dff"/>
     <rect x="44" y="550" width="28" height="10" rx="3" fill="#555b6b"/><rect x="112" y="550" width="28" height="10" rx="3" fill="#ffffff"/><rect x="180" y="550" width="28" height="10" rx="3" fill="#555b6b"/><rect x="248" y="550" width="28" height="10" rx="3" fill="#555b6b"/><rect x="312" y="550" width="28" height="10" rx="3" fill="#555b6b"/>
   </g>
 </svg>
