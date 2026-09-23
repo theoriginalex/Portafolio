@@ -71,18 +71,18 @@ h4 {
 
 h1 {
   font-family: var(--font-display);
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-display);
   font-size: var(--text-3xl);
   line-height: var(--leading-tight);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
 }
 
 h2 {
   font-family: var(--font-display);
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-display);
   font-size: var(--text-2xl);
   line-height: 1.05;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
 }
 
 h3 {
@@ -109,8 +109,8 @@ kbd {
 }
 
 ::selection {
-  background: var(--color-primary);
-  color: var(--color-on-primary);
+  background: var(--color-secondary);
+  color: var(--color-on-secondary);
 }
 
 /* ---------- Accesibilidad ---------- */

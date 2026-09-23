@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design System — Alex Chica</title>
   <meta name="description" content="Design system del portafolio de Alex Ricardo Chica Cox: colores, tipografía, espaciado y componentes reutilizables.">
-  <meta name="theme-color" content="#f3f0e8">
+  <meta name="theme-color" content="#f4f5f7">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
 
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
@@ -92,57 +92,57 @@
         <header class="section-head">
           <p class="section-head__index" aria-hidden="true">01</p>
           <h2 class="section-head__title" id="colors-title">Colores</h2>
-          <p class="section-head__note">Papel, tinta y un solo color de señal. El valor se lee en vivo del CSS.</p>
+          <p class="section-head__note">Azul eléctrico como color principal y lima para destacar. El valor se lee en vivo del CSS.</p>
         </header>
 
         <div class="swatch-grid">
           <figure class="swatch" style="--swatch: var(--color-primary)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Primary</strong><code>--color-primary</code><span class="swatch__value" data-token="--color-primary">#c2410c</span></figcaption>
+            <figcaption class="swatch__info"><strong>Primary</strong><code>--color-primary</code><span class="swatch__value" data-token="--color-primary">#2b4dff</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-primary-hover)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Primary hover</strong><code>--color-primary-hover</code><span class="swatch__value" data-token="--color-primary-hover">#9a3412</span></figcaption>
+            <figcaption class="swatch__info"><strong>Primary hover</strong><code>--color-primary-hover</code><span class="swatch__value" data-token="--color-primary-hover">#1a36d6</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-primary-soft)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Primary soft</strong><code>--color-primary-soft</code><span class="swatch__value" data-token="--color-primary-soft">#fbe3d4</span></figcaption>
+            <figcaption class="swatch__info"><strong>Primary soft</strong><code>--color-primary-soft</code><span class="swatch__value" data-token="--color-primary-soft">#e3e8ff</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-secondary)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Secondary</strong><code>--color-secondary</code><span class="swatch__value" data-token="--color-secondary">#1f3a5f</span></figcaption>
+            <figcaption class="swatch__info"><strong>Secondary (lima)</strong><code>--color-secondary</code><span class="swatch__value" data-token="--color-secondary">#162056</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-background)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Background</strong><code>--color-background</code><span class="swatch__value" data-token="--color-background">#f3f0e8</span></figcaption>
+            <figcaption class="swatch__info"><strong>Background</strong><code>--color-background</code><span class="swatch__value" data-token="--color-background">#f4f5f7</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-surface)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Surface</strong><code>--color-surface</code><span class="swatch__value" data-token="--color-surface">#fbfaf6</span></figcaption>
+            <figcaption class="swatch__info"><strong>Surface</strong><code>--color-surface</code><span class="swatch__value" data-token="--color-surface">#ffffff</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-surface-alt)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Surface alt</strong><code>--color-surface-alt</code><span class="swatch__value" data-token="--color-surface-alt">#e9e5da</span></figcaption>
+            <figcaption class="swatch__info"><strong>Surface alt</strong><code>--color-surface-alt</code><span class="swatch__value" data-token="--color-surface-alt">#e9ebf0</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-text)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Text</strong><code>--color-text</code><span class="swatch__value" data-token="--color-text">#16150f</span></figcaption>
+            <figcaption class="swatch__info"><strong>Text</strong><code>--color-text</code><span class="swatch__value" data-token="--color-text">#0b0d12</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-text-muted)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Text muted</strong><code>--color-text-muted</code><span class="swatch__value" data-token="--color-text-muted">#5f5b50</span></figcaption>
+            <figcaption class="swatch__info"><strong>Text muted</strong><code>--color-text-muted</code><span class="swatch__value" data-token="--color-text-muted">#555b6b</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-border)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Border</strong><code>--color-border</code><span class="swatch__value" data-token="--color-border">#d6d0c1</span></figcaption>
+            <figcaption class="swatch__info"><strong>Border</strong><code>--color-border</code><span class="swatch__value" data-token="--color-border">#d9dce3</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-success)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Success</strong><code>--color-success</code><span class="swatch__value" data-token="--color-success">#2f7d4f</span></figcaption>
+            <figcaption class="swatch__info"><strong>Success</strong><code>--color-success</code><span class="swatch__value" data-token="--color-success">#1a7f4b</span></figcaption>
           </figure>
           <figure class="swatch" style="--swatch: var(--color-danger)">
             <div class="swatch__chip"></div>
-            <figcaption class="swatch__info"><strong>Danger</strong><code>--color-danger</code><span class="swatch__value" data-token="--color-danger">#b42318</span></figcaption>
+            <figcaption class="swatch__info"><strong>Danger</strong><code>--color-danger</code><span class="swatch__value" data-token="--color-danger">#d92d20</span></figcaption>
           </figure>
         </div>
       </div>
@@ -154,12 +154,12 @@
         <header class="section-head">
           <p class="section-head__index" aria-hidden="true">02</p>
           <h2 class="section-head__title" id="type-title">Tipografía</h2>
-          <p class="section-head__note">Serif editorial para títulos, sans para lectura, mono para datos.</p>
+          <p class="section-head__note">Grotesca para títulos, sans para lectura, mono para datos.</p>
         </header>
 
         <ul class="font-list" aria-label="Familias tipográficas">
-          <li class="font-list__item"><span class="font-list__sample font-list__sample--display">Aa</span><strong>Instrument Serif</strong><code>--font-display</code></li>
-          <li class="font-list__item"><span class="font-list__sample font-list__sample--body">Aa</span><strong>Manrope</strong><code>--font-body</code></li>
+          <li class="font-list__item"><span class="font-list__sample font-list__sample--display">Aa</span><strong>Space Grotesk</strong><code>--font-display</code></li>
+          <li class="font-list__item"><span class="font-list__sample font-list__sample--body">Aa</span><strong>DM Sans</strong><code>--font-body</code></li>
           <li class="font-list__item"><span class="font-list__sample font-list__sample--mono">Aa</span><strong>JetBrains Mono</strong><code>--font-mono</code></li>
         </ul>
 
