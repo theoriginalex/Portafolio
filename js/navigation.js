@@ -1,7 +1,4 @@
-/*
- * Navegación: menú responsive, enlace activo según la sección
- * visible (scrollspy), sombra del header y botón "volver arriba".
- */
+
 (function () {
   const header = document.querySelector("[data-header]");
   const toggle = document.querySelector("[data-nav-toggle]");
@@ -9,7 +6,6 @@
   const backToTop = document.querySelector("[data-back-to-top]");
   const desktopQuery = window.matchMedia("(min-width: 56rem)");
 
-  /* ---------- Menú responsive ---------- */
   function setMenu(open) {
     if (!toggle || !list) return;
     toggle.setAttribute("aria-expanded", String(open));
@@ -42,7 +38,6 @@
     desktopQuery.addEventListener("change", () => setMenu(false));
   }
 
-  /* ---------- Scrollspy ---------- */
   const sectionLinks = Array.from(document.querySelectorAll('.nav__link[href^="#"]'));
   const sections = sectionLinks
     .map((link) => document.querySelector(link.getAttribute("href")))
@@ -71,7 +66,6 @@
     sections.forEach((section) => observer.observe(section));
   }
 
-  /* ---------- Header y "volver arriba" ---------- */
   function onScroll() {
     const y = window.scrollY;
     if (header) header.classList.toggle("is-scrolled", y > 8);

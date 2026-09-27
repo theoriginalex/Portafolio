@@ -1,7 +1,4 @@
-/*
- * Tema claro/oscuro con persistencia en localStorage.
- * Si el usuario nunca eligió, se sigue la preferencia del sistema.
- */
+
 (function () {
   const STORAGE_KEY = "theme";
   const root = document.documentElement;
@@ -36,7 +33,6 @@
     try {
       localStorage.setItem(STORAGE_KEY, next);
     } catch (error) {
-      /* Sin almacenamiento disponible: el cambio dura solo esta visita. */
     }
     applyTheme(next);
   }

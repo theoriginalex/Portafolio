@@ -7,7 +7,6 @@
   const toast = document.querySelector("[data-toast]");
   let toastTimer;
 
-  /* ---------- Toast ---------- */
   function showToast(message) {
     if (!toast) return;
     toast.textContent = message;
@@ -18,7 +17,6 @@
 
   window.portfolioToast = showToast;
 
-  /* ---------- Copiar correo ---------- */
   async function copyText(text) {
     try {
       await navigator.clipboard.writeText(text);
@@ -34,7 +32,6 @@
     button.addEventListener("click", () => copyText(button.dataset.copy));
   });
 
-  /* ---------- Formulario ---------- */
   const form = document.querySelector("[data-contact-form]");
   if (!form) return;
 
@@ -80,7 +77,6 @@
   }
 
   fields.forEach((field) => {
-    // Valida al salir del campo y, si ya tenía error, mientras se corrige.
     field.addEventListener("blur", () => validateField(field));
     field.addEventListener("input", () => {
       if (field.getAttribute("aria-invalid") === "true") validateField(field);

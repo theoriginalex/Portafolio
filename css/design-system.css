@@ -1,8 +1,3 @@
-/* =========================================================
-   DESIGN SYSTEM — estilos exclusivos de la página de
-   documentación. Solo "vitrinas"; los componentes que se
-   muestran vienen de components.css.
-   ========================================================= */
 
 .ds-hero {
   padding-block: var(--space-16) var(--space-12);
@@ -44,7 +39,7 @@ code {
   text-decoration: none;
 }
 
-/* ---------- Colores ---------- */
+
 .swatch-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
@@ -82,7 +77,7 @@ code {
   text-transform: uppercase;
 }
 
-/* ---------- Tipografía ---------- */
+
 .font-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
@@ -161,7 +156,6 @@ code {
   }
 }
 
-/* ---------- Espaciado ---------- */
 .space-scale {
   display: grid;
   gap: var(--space-2);
@@ -200,7 +194,6 @@ code {
   }
 }
 
-/* ---------- Bordes y sombras ---------- */
 .token-boxes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
@@ -230,7 +223,6 @@ code {
   border: var(--border-strong);
 }
 
-/* ---------- Vitrinas de componentes ---------- */
 .ds-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));

@@ -1,8 +1,4 @@
-/*
- * Proyectos: filtro por tecnología y modal de detalles.
- * Los datos viven en el HTML (data-tags y <template>), así el
- * contenido sigue siendo visible e indexable sin JavaScript.
- */
+
 (function () {
   const grid = document.querySelector("[data-projects]");
   if (!grid) return;
@@ -12,7 +8,6 @@
   const status = document.querySelector("[data-filter-status]");
   const emptyState = document.querySelector("[data-empty-state]");
 
-  /* ---------- Filtro ---------- */
   function applyFilter(filter) {
     let visible = 0;
 
@@ -37,7 +32,6 @@
     chip.addEventListener("click", () => applyFilter(chip.dataset.filter));
   });
 
-  /* ---------- Modal ---------- */
   const modal = document.querySelector("[data-project-modal]");
   if (!modal || typeof modal.showModal !== "function") return;
 
@@ -77,7 +71,6 @@
 
   modal.querySelector("[data-modal-close]").addEventListener("click", () => modal.close());
 
-  // Clic fuera del panel (sobre el backdrop) cierra el modal.
   modal.addEventListener("click", (event) => {
     if (event.target === modal) modal.close();
   });

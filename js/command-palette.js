@@ -1,7 +1,4 @@
-/*
- * Paleta de comandos (Ctrl/⌘ + K): navegación rápida por teclado
- * a secciones y acciones. Pensada para quien revisa rápido.
- */
+
 (function () {
   const palette = document.querySelector("[data-palette]");
   if (!palette || typeof palette.showModal !== "function") return;

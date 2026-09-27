@@ -1,6 +1,4 @@
-/* =========================================================
-   BASE — reset mínimo y estilos de elementos HTML.
-   ========================================================= */
+
 
 *,
 *::before,
@@ -59,7 +57,7 @@ ol[class] {
   padding: 0;
 }
 
-/* ---------- Tipografía ---------- */
+
 h1,
 h2,
 h3,
@@ -113,7 +111,6 @@ kbd {
   color: var(--color-on-primary);
 }
 
-/* ---------- Accesibilidad ---------- */
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 3px;

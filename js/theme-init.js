@@ -1,7 +1,3 @@
-/*
- * Se carga de forma síncrona en <head>: aplica el tema guardado
- * (o el del sistema) antes de pintar, para evitar un parpadeo.
- */
 (function () {
   var root = document.documentElement;
   var stored = null;
