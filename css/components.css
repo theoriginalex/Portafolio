@@ -315,12 +315,20 @@
   gap: var(--space-4);
 }
 
+.spec-card__avatar {
+  flex-shrink: 0;
+}
+
 .spec-card__avatar img {
+  display: block;
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
   border: var(--border-strong);
-  object-fit: cover;
+  box-shadow: var(--shadow-offset);
+  background: #fff;
+  object-fit: contain;
+  object-position: 50% 100%;
 }
 
 .spec-card__title {
